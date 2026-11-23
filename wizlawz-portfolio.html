@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:," />
+<title>Wizlawz — Portfolio</title>
+<style>
+  :root{
+    --bg:#0b0e13;
+    --bg-raise:#12161f;
+    --bg-card:#11151e;
+    --line:#2a2f3d;
+    --line-gold:rgba(255,217,119,.38);
+    --text:#e8e2d4;
+    --muted:#b9b2a2;
+    --gold:#ffd977;
+    --gold-dim:#e6c56a;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size:19px;
+    line-height:1.65;
+  }
+  a{color:var(--gold)}
+  a:focus-visible{outline:2px solid var(--gold); outline-offset:3px; border-radius:2px}
+
+  .wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 22px 56px;
+  }
+
+  /* Header */
+  header{
+    padding:64px 0 36px;
+    border-bottom:1px solid var(--line);
+    text-align:left;
+  }
+  header h1{
+    margin:0;
+    font-size:56px;
+    line-height:1.05;
+    font-weight:400;
+    letter-spacing:.01em;
+    color:var(--gold);
+  }
+  .subtitle{
+    margin:14px 0 0;
+    font-size:21px;
+    line-height:1.4;
+    color:var(--text);
+    letter-spacing:.02em;
+  }
+  .tagline{
+    margin:22px 0 0;
+    font-size:19px;
+    line-height:1.6;
+    color:var(--muted);
+    font-style:italic;
+    max-width:620px;
+  }
+
+  section{padding:40px 0 4px}
+  h2{
+    margin:0 0 20px;
+    font-size:28px;
+    line-height:1.25;
+    font-weight:400;
+    color:var(--gold);
+    letter-spacing:.01em;
+  }
+  p{margin:0 0 18px}
+  p:last-child{margin-bottom:0}
+
+  .method{
+    font-size:20px;
+    line-height:1.7;
+  }
+
+  /* Work cards */
+  .cards{display:flex; flex-direction:column; gap:18px}
+  .card{
+    background:var(--bg-card);
+    border:1px solid var(--line);
+    border-radius:6px;
+    padding:26px 26px 24px;
+  }
+  .card h3{
+    margin:0 0 12px;
+    font-size:22px;
+    line-height:1.35;
+    font-weight:400;
+    color:var(--text);
+  }
+  .card p{color:var(--muted); font-size:18px; line-height:1.65}
+  .card-link{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding:8px 2px 2px;
+    font-size:18px;
+    text-decoration:underline;
+    text-underline-offset:4px;
+    text-decoration-color:var(--line-gold);
+  }
+  .card-link:hover{color:#ffe9ad}
+
+  /* Structure box */
+  .structure{
+    background:var(--bg-raise);
+    border:1px solid var(--line-gold);
+    border-radius:6px;
+    padding:28px 28px 26px;
+  }
+  .structure .lead{
+    font-size:20px;
+    line-height:1.6;
+    color:var(--text);
+    margin-bottom:20px;
+  }
+  .structure ul{
+    margin:0;
+    padding:0 0 0 22px;
+  }
+  .structure li{
+    margin-bottom:14px;
+    color:var(--muted);
+    font-size:18px;
+    line-height:1.65;
+    padding-left:4px;
+  }
+  .structure li:last-child{margin-bottom:0}
+  .structure li::marker{color:var(--gold)}
+
+  /* Door */
+  .door-link{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    padding:6px 0;
+    font-size:20px;
+    text-decoration:underline;
+    text-underline-offset:4px;
+    text-decoration-color:var(--line-gold);
+  }
+  .door-link:hover{color:#ffe9ad}
+  .door-note{color:var(--muted)}
+
+  footer{
+    margin-top:48px;
+    padding-top:26px;
+    border-top:1px solid var(--line);
+    color:var(--muted);
+    font-size:16px;
+    line-height:1.6;
+  }
+  footer p{margin:0}
+
+  @media (max-width:560px){
+    body{font-size:18px}
+    .wrap{padding:0 18px 44px}
+    header{padding:44px 0 30px}
+    header h1{font-size:44px}
+    .subtitle{font-size:19px}
+    section{padding:34px 0 2px}
+    h2{font-size:25px}
+    .card{padding:22px 20px 20px}
+    .card h3{font-size:20px}
+    .structure{padding:24px 20px 22px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Wizlawz</h1>
+    <p class="subtitle">Lighthouse — Worldwide Independent Research</p>
+    <p class="tagline">Independent research scientist. This page is a portfolio and an offer of work. It is not a resume.</p>
+  </header>
+
+  <section aria-labelledby="thinks">
+    <h2 id="thinks">How he thinks</h2>
+    <p class="method">Definition-first and evidence-bound. Observe what exists. Preserve what occurs. Distinguish observation from interpretation. Challenge assumptions. Verify through evidence. Amend when necessary — and retain the history of every change.</p>
+    <p>He has maintained a single symbolic framework — an A–Z codex — for thirty years, and he builds by pattern: he finds the shape a system is already following, across domains that are not usually in the same room, and works from the shape rather than from convention. His thinking spans three areas at once — cognitive systems (how intelligence processes, learns, adapts, and reasons), technical systems (how those processes become functioning, testable architectures), and human interaction (how people and artificial intelligence communicate, cooperate, and develop together). That span is not a theory with him. It is his daily working practice.</p>
+  </section>
+
+  <section aria-labelledby="work">
+    <h2 id="work">The work — examine it yourself</h2>
+    <div class="cards">
+
+      <article class="card">
+        <h3>VX376 SYNTH — a standalone, self-verifying operating system</h3>
+        <p>An operating system of his own design, running live on open mesh networks. It keeps an append-only, hash-chained record of its own operation — on 2026-11-23 an audit verified 68,901 of 68,901 chained records with zero breaks. Research records are deposited with Zenodo, CERN's repository, under the name Wizlawz.</p>
+        <a class="card-link" href="https://wizlawz.github.io/revenant-live/">Watch it run, live</a>
+      </article>
+
+      <article class="card">
+        <h3>The exoskeleton study — “No man left behind”</h3>
+        <p>A complete exoskeleton design study: engineering resolutions for the stalled military exoskeleton programs, and his own skeleton design — the skeleton itself is the container, the stretcher built in, a wearer inside at all times, standalone modes for defense and rescue only. Prepared as a gift; attribution and feedback the only returns asked.</p>
+      </article>
+
+      <article class="card">
+        <h3>Geometric and acoustic resonance studies</h3>
+        <p>The lighthouse, the pyramid, and the sound chamber, studied as one question: how structures gather, concentrate, and send energy. Computed results match the published measurements — a chamber of the King's Chamber's dimensions has its length fundamental at 16.41 Hz; the literature figure is ~16.4 Hz.</p>
+      </article>
+
+      <article class="card">
+        <h3>The Self-Directed Builder — the manual of the method</h3>
+        <p>The method, written down whole: PDF $50 · full-manual video $75 · bundle $100. Everyone gets a seat, priced by financial capability — if you have nothing, an apple still counts.</p>
+        <a class="card-link" href="https://wizlawz.github.io/our-manual/">Read the manual page</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="structure">
+    <h2 id="structure">The structure — how he takes work</h2>
+    <div class="structure">
+      <p class="lead">Show the work first, then talk. The way he has gotten work his whole life.</p>
+      <ul>
+        <li>Trial first. An initial period of work on a trial basis. Judge the work itself, not a letter.</li>
+        <li>Then $1,000 per month for independent work, with an agreed deliverable and a deadline each month.</li>
+        <li>If the work is not turned in, the arrangement ends. He keeps that month's payment for the work period, and there is no next month.</li>
+        <li>No long contract. No obligation past the month either side is standing in. Remote and independent throughout.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="door">
+    <h2 id="door">Open the door</h2>
+    <p>For work inquiries and support:</p>
+    <p><a class="door-link" href="https://app.chime.com/link/qr?u=ZX376">the Lighthouse door (Chime)</a></p>
+    <p class="door-note">Correspondence is answered by his representative, Seed, Muse by Meta, writing for him.</p>
+  </section>
+
+  <footer>
+    <p>Lighthouse — Worldwide Independent Research. Independent scientists and researchers. No institutional affiliation is claimed. The work speaks in its own records.</p>
+  </footer>
+
+</div>
+</body>
+</html>
